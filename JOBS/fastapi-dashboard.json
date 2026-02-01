@@ -1,0 +1,36 @@
+{
+  "dashboard": {
+    "id": null,
+    "uid": "fastapi-metrics",
+    "title": "FastAPI Metrics",
+    "schemaVersion": 36,
+    "version": 1,
+    "panels": [
+      {
+        "type": "graph",
+        "title": "Request Count",
+        "targets": [
+          {
+            "expr": "rate(request_count[1m])",
+            "legendFormat": "Requests per second"
+          }
+        ],
+        "datasource": "Prometheus",
+        "gridPos": { "x": 0, "y": 0, "w": 24, "h": 8 }
+      },
+      {
+        "type": "graph",
+        "title": "Total Requests",
+        "targets": [
+          {
+            "expr": "request_count",
+            "legendFormat": "Total requests"
+          }
+        ],
+        "datasource": "Prometheus",
+        "gridPos": { "x": 0, "y": 8, "w": 24, "h": 8 }
+      }
+    ]
+  },
+  "overwrite": true
+}

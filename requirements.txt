@@ -1,0 +1,9 @@
+fastapi 
+uvicorn[standard] 
+prometheus-client 
+python-dotenv 
+sqlalchemy 
+alembic 
+passlib[bcrypt] 
+python-jose
+prometheus-fastapi-instrumentator
