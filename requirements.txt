@@ -9,3 +9,4 @@ python-jose
 prometheus-fastapi-instrumentator
 gunicorn
 pydantic-settings
+psycopg2
